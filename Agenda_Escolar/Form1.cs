@@ -15,6 +15,7 @@ namespace Agenda_Escolar
         public Login()
         {
             InitializeComponent();
+            
             label1.Select();
         }
 
@@ -36,6 +37,11 @@ namespace Agenda_Escolar
             String op = MessageBox.Show("Desejas fechar a aplicação?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information).ToString();
 
             if (op == "Yes") Application.Exit();
+        }
+
+        private void btnLogar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
