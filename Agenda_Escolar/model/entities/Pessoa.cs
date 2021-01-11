@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda_Escolar.model.entities
 {
-    class Pessoa
+    public class Pessoa
     {
         private int ID;
         private int CPF;

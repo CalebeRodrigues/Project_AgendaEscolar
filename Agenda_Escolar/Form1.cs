@@ -65,11 +65,21 @@ namespace Agenda_Escolar
             if(pessoa.Equals(pessoa2) == true)
             {
                 MessageBox.Show("Seja bem vindo " + pessoa2.getNome() + "!");
+                frames.user.Inicio inicio = new frames.user.Inicio(pessoa);
+                Hide();
+                inicio.ShowDialog();
+                resetForm(this);
             }
             else
             {
                 MessageBox.Show("Usuario não reconhecido!");
             }
+        }
+
+        private void resetForm(Login login)
+        {
+            login = new Login();
+            login.ShowDialog();
         }
     }
 }
