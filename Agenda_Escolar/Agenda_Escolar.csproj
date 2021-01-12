@@ -100,5 +100,11 @@
   <ItemGroup>
     <Folder Include="bd\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\adicionar.png" />
+    <Content Include="img\anotações.png" />
+    <Content Include="img\perfil.png" />
+    <Content Include="img\provas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

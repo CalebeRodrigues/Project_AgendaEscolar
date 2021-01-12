@@ -20,9 +20,11 @@ namespace Agenda_Escolar.frames.user
             this.pessoa = pessoa;
         }
 
-        private void btnLogar_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
-            Close();
+            String op = MessageBox.Show("Desejas sair do seu perfil?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Information).ToString();
+
+            if (op == "Yes") Close();
         }
     }
 }

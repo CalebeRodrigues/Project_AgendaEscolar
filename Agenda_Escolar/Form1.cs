@@ -64,7 +64,7 @@ namespace Agenda_Escolar
 
             if(pessoa.Equals(pessoa2) == true)
             {
-                MessageBox.Show("Seja bem vindo " + pessoa2.getNome() + "!");
+                MessageBox.Show("Seja bem vindo " + pessoa2.getNome() + "!", "Acesso autorizado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frames.user.Inicio inicio = new frames.user.Inicio(pessoa);
                 Hide();
                 inicio.ShowDialog();
