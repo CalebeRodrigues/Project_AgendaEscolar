@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.btnProvas = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnOpcoes = new System.Windows.Forms.Button();
@@ -231,6 +232,7 @@
             this.Controls.Add(this.button7);
             this.Font = new System.Drawing.Font("Lucida Bright", 15.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
