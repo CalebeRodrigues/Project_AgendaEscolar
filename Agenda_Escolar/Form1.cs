@@ -13,15 +13,41 @@ namespace Agenda_Escolar
     public partial class Login : Form
     {
 
-        model.entities.Pessoa pessoa;
+        List<model.entities.Pessoa> pessoa = new List<model.entities.Pessoa>();
+        int ID = 0;
 
         public Login()
         {
             InitializeComponent();
 
-            pessoa = new model.entities.Pessoa(0, 0, null, null, "caca", "caca123");
+            pessoa.Add(new model.entities.Pessoa
+                            (0, 11111111111, "27/11/2002", "Calebe Barros Rodrigues", "caca", "caca123"));
             
             label1.Select();
+        }
+
+        private bool verificaLogin(model.entities.Pessoa test)
+        {
+            foreach (model.entities.Pessoa list in pessoa){
+                if (list.Equals(test)){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private model.entities.Pessoa GetPessoa (model.entities.Pessoa pessoaTest)
+        {
+            foreach (model.entities.Pessoa list in pessoa)
+            {
+                if (list.Equals(pessoaTest))
+                {
+                    pessoaTest = list;
+                    return list;
+                }
+            }
+
+            return null;
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
@@ -59,13 +85,14 @@ namespace Agenda_Escolar
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            model.entities.Pessoa pessoa2 = new model.entities.Pessoa(0, 0, null, "Calebe", 
-                                                                        txtUsuario.Text, txtSenha.Text);
+            model.entities.Pessoa pessoaLogin = new model.entities.Pessoa(0, 00000000000, null,
+                                    null, txtUsuario.Text, txtSenha.Text);
 
-            if(pessoa.Equals(pessoa2) == true)
+            if(verificaLogin(pessoaLogin))
             {
-                MessageBox.Show("Seja bem vindo " + pessoa2.getNome() + "!", "Acesso autorizado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frames.user.Inicio inicio = new frames.user.Inicio(pessoa);
+                pessoaLogin = GetPessoa(pessoaLogin);
+                MessageBox.Show("Seja bem vindo " + pessoaLogin.getNome() + "!", "Acesso autorizado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frames.user.Inicio inicio = new frames.user.Inicio(pessoaLogin);
                 Hide();
                 inicio.ShowDialog();
                 resetForm(this);
@@ -81,5 +108,24 @@ namespace Agenda_Escolar
             login = new Login();
             login.ShowDialog();
         }
+
+        private void linkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frames.user.Cadastro cadastro = new frames.user.Cadastro(ID);
+            Hide();
+            cadastro.ShowDialog();
+
+
+            Show();
+
+            if (cadastro.isCadastroExist())
+            {
+                pessoa.Add(cadastro.cadastraPessoa());
+                cadastro.Close();
+            }
+
+        }
+
+
     }
 }

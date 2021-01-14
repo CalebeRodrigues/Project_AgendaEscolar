@@ -9,7 +9,7 @@ namespace Agenda_Escolar.model.entities
     public class Pessoa
     {
         private int ID;
-        private int CPF;
+        private long CPF;
         private String dataNascimento;
         private String nome;
         private String userName;
@@ -17,7 +17,7 @@ namespace Agenda_Escolar.model.entities
 
         public Pessoa() { }
 
-        public Pessoa (int ID, int CPF, String dataNascimento, String nome, String userName, String senha)
+        public Pessoa (int ID, long CPF, String dataNascimento, String nome, String userName, String senha)
         {
             this.ID = ID;
             this.CPF = CPF;
@@ -29,7 +29,7 @@ namespace Agenda_Escolar.model.entities
         
         public int getID() { return ID; }
 
-        public int getCPF() { return CPF; }
+        public long getCPF() { return CPF; }
 
         public String getDataNascimento() { return dataNascimento; }
 
@@ -55,5 +55,6 @@ namespace Agenda_Escolar.model.entities
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(senha);
             return hashCode;
         }
+        
     }
 }

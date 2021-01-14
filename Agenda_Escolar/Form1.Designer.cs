@@ -32,7 +32,7 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkCadastro = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -98,15 +98,16 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Não é cadastrado?";
             // 
-            // linkLabel1
+            // linkCadastro
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(172, 298);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(62, 13);
-            this.linkLabel1.TabIndex = 5;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Clique aqui.";
+            this.linkCadastro.AutoSize = true;
+            this.linkCadastro.Location = new System.Drawing.Point(172, 298);
+            this.linkCadastro.Name = "linkCadastro";
+            this.linkCadastro.Size = new System.Drawing.Size(62, 13);
+            this.linkCadastro.TabIndex = 5;
+            this.linkCadastro.TabStop = true;
+            this.linkCadastro.Text = "Clique aqui.";
+            this.linkCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCadastro_LinkClicked);
             // 
             // label1
             // 
@@ -193,7 +194,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkCadastro);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnLogar);
             this.Controls.Add(this.txtSenha);
@@ -220,7 +221,7 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkCadastro;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
