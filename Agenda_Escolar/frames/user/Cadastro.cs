@@ -40,13 +40,21 @@ namespace Agenda_Escolar.frames.user
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            exist = true;
+            try
+            {
+                exist = true;
 
-            pessoa = new model.entities.Pessoa
-                (ID, Convert.ToInt64(mskCPF.Text), mskNascimento.Text, txtNome.Text, txtUserName.Text, txtSenha.Text);
+                pessoa = new model.entities.Pessoa
+                    (ID, Convert.ToInt64(mskCPF.Text), mskNascimento.Text, txtNome.Text, txtUserName.Text, txtSenha.Text);
 
-            MessageBox.Show("Cadastro realizado!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Hide();
+                MessageBox.Show("Cadastro realizado!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Hide();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao realizar cadastro. Verifique se todos os campos estão preenchidos e " +
+                                "tente novamente", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

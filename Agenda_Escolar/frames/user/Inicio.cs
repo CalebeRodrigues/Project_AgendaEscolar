@@ -13,13 +13,17 @@ namespace Agenda_Escolar.frames.user
     public partial class Inicio : Form
     {
         model.entities.Pessoa pessoa;
+        Control control;
+        Button controlButton;
 
         public Inicio(model.entities.Pessoa pessoa)
         {
             InitializeComponent();
+            controlButton = btnInicio;
             this.pessoa = pessoa;
 
-            userName.Text = this.pessoa.getNome();
+            userName.Text = "Olá, " + this.pessoa.getPrimeiroNome();
+            userName.Select();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -31,7 +35,7 @@ namespace Agenda_Escolar.frames.user
 
         private void userName_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Dados de Perfil do Usuario:"+ "\n\n  Nome: " + pessoa.getNome() +
+            MessageBox.Show("Dados de Perfil do Usuário:"+ "\n\n  Nome: " + pessoa.getNome() +
                             "\n\n  CPF: " + pessoa.getCPF() +
                             "\n\n  Data Nascimento: " + pessoa.getDataNascimento() +
                             "\n\n  User Name: " + pessoa.getUserName(),                           
@@ -41,13 +45,58 @@ namespace Agenda_Escolar.frames.user
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Projeto desenvolvido por Calebe Barros Rodrigues\n\n"
-                            + "Técnico em informatica (2017-2019) e estudante \n\nde Sistema de Informações (2020-2024), Barretos-SP.\n" 
-                            + "\n\n       @ Calebe Barros Rodrigues, 2020.",
-                    "Informações do Desenvolvedor!",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
+            //control.FindForm().Close();
+            control = new Sobre();
+            control.FindForm().TopLevel = false;
+            panelConteudo.Controls.Add(control);
+            control.Visible = true;
+
+            controlButton.BackColor = Color.Turquoise;
+            btnSobre.BackColor = Color.LightSeaGreen;
+            controlButton = btnSobre;
+            txtTitulo.Text = "Sobre o desenvolvedor";
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            controlButton.BackColor = Color.Turquoise;
+            btnInicio.BackColor = Color.LightSeaGreen;
+            controlButton = btnInicio;
+            txtTitulo.Text = "Agenda Escolar";
+        }
+
+        private void btnAnotacoes_Click(object sender, EventArgs e)
+        {
+            controlButton.BackColor = Color.Turquoise;
+            btnAnotacoes.BackColor = Color.LightSeaGreen;
+            controlButton = btnAnotacoes;
+            txtTitulo.Text = "Anotações";
+        }
+
+        private void btnProvas_Click(object sender, EventArgs e)
+        {
+            controlButton.BackColor = Color.Turquoise;
+            btnProvas.BackColor = Color.LightSeaGreen;
+            controlButton = btnProvas;
+            txtTitulo.Text = "Lista de Provas";
+        }
+
+        private void btnPlanos_Click(object sender, EventArgs e)
+        {
+            controlButton.BackColor = Color.Turquoise;
+            btnPlanos.BackColor = Color.LightSeaGreen;
+            controlButton = btnPlanos;
+            txtTitulo.Text = "Planos de Estudo";
+        }
+
+        private void btnOpcoes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

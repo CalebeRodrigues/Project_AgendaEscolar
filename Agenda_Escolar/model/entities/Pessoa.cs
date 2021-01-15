@@ -39,6 +39,16 @@ namespace Agenda_Escolar.model.entities
 
         public String getSenha() { return senha; }
 
+        public String getPrimeiroNome ()
+        {
+            if(nome != null)
+            {
+                String[] primeiroNome = nome.Split(' ');
+                return primeiroNome[0];
+            }
+
+            return null;
+        }
 
         public override bool Equals(object obj)
         {
