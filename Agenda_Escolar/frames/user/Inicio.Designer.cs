@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTitulo = new System.Windows.Forms.Button();
+            this.userName = new System.Windows.Forms.Button();
+            this.pnlConteudo = new System.Windows.Forms.Panel();
+            this.panelConteudo = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnProvas = new System.Windows.Forms.Button();
             this.btnPlanos = new System.Windows.Forms.Button();
@@ -38,16 +44,10 @@
             this.btnOpcoes = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtTitulo = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.userName = new System.Windows.Forms.Button();
-            this.pnlConteudo = new System.Windows.Forms.Panel();
-            this.panelConteudo = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlConteudo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -66,6 +66,73 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(233, 561);
             this.flowLayoutPanel1.TabIndex = 18;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Turquoise;
+            this.panel1.Controls.Add(this.txtTitulo);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.userName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(799, 51);
+            this.panel1.TabIndex = 19;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.BackColor = System.Drawing.Color.Turquoise;
+            this.txtTitulo.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.txtTitulo.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitulo.Location = new System.Drawing.Point(455, 0);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(344, 49);
+            this.txtTitulo.TabIndex = 20;
+            this.txtTitulo.Text = "Agenda Escolar";
+            this.txtTitulo.UseVisualStyleBackColor = false;
+            // 
+            // userName
+            // 
+            this.userName.BackColor = System.Drawing.Color.Turquoise;
+            this.userName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.userName.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.Location = new System.Drawing.Point(0, 0);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(461, 49);
+            this.userName.TabIndex = 19;
+            this.userName.Text = "Nome Usuario";
+            this.userName.UseVisualStyleBackColor = false;
+            // 
+            // pnlConteudo
+            // 
+            this.pnlConteudo.Controls.Add(this.panelConteudo);
+            this.pnlConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlConteudo.Location = new System.Drawing.Point(0, 51);
+            this.pnlConteudo.Name = "pnlConteudo";
+            this.pnlConteudo.Size = new System.Drawing.Size(799, 510);
+            this.pnlConteudo.TabIndex = 20;
+            // 
+            // panelConteudo
+            // 
+            this.panelConteudo.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelConteudo.Location = new System.Drawing.Point(0, 0);
+            this.panelConteudo.Name = "panelConteudo";
+            this.panelConteudo.Size = new System.Drawing.Size(799, 510);
+            this.panelConteudo.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Turquoise;
+            this.pictureBox2.Image = global::Agenda_Escolar.Properties.Resources.perfil;
+            this.pictureBox2.Location = new System.Drawing.Point(31, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // btnInicio
             // 
@@ -221,73 +288,6 @@
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Turquoise;
-            this.panel1.Controls.Add(this.txtTitulo);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.userName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 51);
-            this.panel1.TabIndex = 19;
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.BackColor = System.Drawing.Color.Turquoise;
-            this.txtTitulo.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.txtTitulo.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitulo.Location = new System.Drawing.Point(455, 0);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(344, 49);
-            this.txtTitulo.TabIndex = 20;
-            this.txtTitulo.Text = "Agenda Escolar";
-            this.txtTitulo.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Turquoise;
-            this.pictureBox2.Image = global::Agenda_Escolar.Properties.Resources.perfil;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // userName
-            // 
-            this.userName.BackColor = System.Drawing.Color.Turquoise;
-            this.userName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.userName.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.Location = new System.Drawing.Point(0, 0);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(461, 49);
-            this.userName.TabIndex = 19;
-            this.userName.Text = "Nome Usuario";
-            this.userName.UseVisualStyleBackColor = false;
-            // 
-            // pnlConteudo
-            // 
-            this.pnlConteudo.Controls.Add(this.panelConteudo);
-            this.pnlConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlConteudo.Location = new System.Drawing.Point(0, 51);
-            this.pnlConteudo.Name = "pnlConteudo";
-            this.pnlConteudo.Size = new System.Drawing.Size(799, 510);
-            this.pnlConteudo.TabIndex = 20;
-            // 
-            // panelConteudo
-            // 
-            this.panelConteudo.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConteudo.Location = new System.Drawing.Point(0, 0);
-            this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(799, 510);
-            this.panelConteudo.TabIndex = 0;
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
@@ -306,8 +306,8 @@
             this.Text = "Inicio";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlConteudo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -315,19 +315,19 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button btnAnotacoes;
-        private System.Windows.Forms.Button btnPlanos;
-        private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Button btnSobre;
-        private System.Windows.Forms.Button btnOpcoes;
-        private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Button btnProvas;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button txtTitulo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button userName;
-        private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Panel pnlConteudo;
         private System.Windows.Forms.Panel panelConteudo;
+        public System.Windows.Forms.Button btnAnotacoes;
+        public System.Windows.Forms.Button btnPlanos;
+        public System.Windows.Forms.Button btnSair;
+        public System.Windows.Forms.Button btnSobre;
+        public System.Windows.Forms.Button btnOpcoes;
+        public System.Windows.Forms.Button btnInicio;
+        public System.Windows.Forms.Button btnProvas;
+        public System.Windows.Forms.Button btnPerfil;
     }
 }

@@ -22,13 +22,32 @@ namespace Agenda_Escolar.frames.user
             controlButton = btnInicio;
             this.pessoa = pessoa;
 
-            control = new Sobre();
+            control = new Home(this);
             control.FindForm().TopLevel = false;
             panelConteudo.Controls.Add(control);
-            control.Visible = false;
+            control.Visible = true;
 
             userName.Text = "Olá, " + this.pessoa.getPrimeiroNome();
             panelConteudo.Select();
+        }
+
+        public model.entities.Pessoa getPessoa() { return pessoa; }
+
+        public void alteraJanela(Form form)
+        {
+            control.FindForm().Close();
+            control = form;
+            control.FindForm().TopLevel = false;
+            panelConteudo.Controls.Add(control);
+            control.Visible = true;
+        }
+
+        public void alteraButton(Button button, String text)
+        {
+            controlButton.BackColor = Color.Turquoise;
+            button.BackColor = Color.LightSeaGreen;
+            controlButton = button;
+            txtTitulo.Text = text;
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -50,80 +69,51 @@ namespace Agenda_Escolar.frames.user
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
-            control.FindForm().Close();
-            control = new Sobre();
-            control.FindForm().TopLevel = false;
-            panelConteudo.Controls.Add(control);
-            control.Visible = true;
+            alteraJanela(new Sobre());
 
-            controlButton.BackColor = Color.Turquoise;
-            btnSobre.BackColor = Color.LightSeaGreen;
-            controlButton = btnSobre;
-            txtTitulo.Text = "Sobre o desenvolvedor";
+            alteraButton(btnSobre, "Sobre o desenvolvedor");
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            control.Visible = false;
+            alteraJanela(new Home(this));
 
-            controlButton.BackColor = Color.Turquoise;
-            btnInicio.BackColor = Color.LightSeaGreen;
-            controlButton = btnInicio;
-            txtTitulo.Text = "Agenda Escolar";
+            alteraButton(btnInicio, "Agenda Escolar");
         }
 
         private void btnAnotacoes_Click(object sender, EventArgs e)
         {
             control.Visible = false;
 
-            controlButton.BackColor = Color.Turquoise;
-            btnAnotacoes.BackColor = Color.LightSeaGreen;
-            controlButton = btnAnotacoes;
-            txtTitulo.Text = "Anotações";
+            alteraButton(btnAnotacoes, "Anotações");
         }
 
         private void btnProvas_Click(object sender, EventArgs e)
         {
             control.Visible = false;
 
-            controlButton.BackColor = Color.Turquoise;
-            btnProvas.BackColor = Color.LightSeaGreen;
-            controlButton = btnProvas;
-            txtTitulo.Text = "Lista de Provas";
+            alteraButton(btnProvas, "Lista de Provas");
         }
 
         private void btnPlanos_Click(object sender, EventArgs e)
         {
             control.Visible = false;
 
-            controlButton.BackColor = Color.Turquoise;
-            btnPlanos.BackColor = Color.LightSeaGreen;
-            controlButton = btnPlanos;
-            txtTitulo.Text = "Planos de Estudo";
+            alteraButton(btnPlanos, "Planos de Estudo");
         }
 
         private void btnOpcoes_Click(object sender, EventArgs e)
         {
             control.Visible = false;
 
-            controlButton.BackColor = Color.Turquoise;
-            btnOpcoes.BackColor = Color.LightSeaGreen;
-            controlButton = btnOpcoes;
-            txtTitulo.Text = "Configurações";
+            alteraButton(btnOpcoes, "Configurações");
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            control.FindForm().Close();
-            control = new frames.userControl.Perfil(pessoa);
-            control.FindForm().TopLevel = false;
-            panelConteudo.Controls.Add(control);
-            control.Visible = true;
+            alteraJanela(new frames.userControl.Perfil(pessoa));
 
-            controlButton.BackColor = Color.Turquoise;
-            btnPerfil.BackColor = Color.LightSeaGreen;
-            controlButton = btnPerfil;
-            txtTitulo.Text = "Meu perfil";
+            alteraButton(btnPerfil, "Meu perfil");
         }
     }
 }
