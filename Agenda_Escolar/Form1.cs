@@ -103,10 +103,13 @@ namespace Agenda_Escolar
             }
         }
 
-        private void resetForm(Login login)
+        private void resetForm(Login form)
         {
-            login = new Login();
-            login.ShowDialog();
+            Login login = new Login();
+            login.pessoa = form.pessoa;
+            login.ID = form.ID;
+            form = login;
+            form.ShowDialog();
         }
 
         private void linkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

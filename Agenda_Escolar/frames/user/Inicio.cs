@@ -22,8 +22,13 @@ namespace Agenda_Escolar.frames.user
             controlButton = btnInicio;
             this.pessoa = pessoa;
 
+            control = new Sobre();
+            control.FindForm().TopLevel = false;
+            panelConteudo.Controls.Add(control);
+            control.Visible = false;
+
             userName.Text = "Olá, " + this.pessoa.getPrimeiroNome();
-            userName.Select();
+            panelConteudo.Select();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -45,7 +50,7 @@ namespace Agenda_Escolar.frames.user
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
-            //control.FindForm().Close();
+            control.FindForm().Close();
             control = new Sobre();
             control.FindForm().TopLevel = false;
             panelConteudo.Controls.Add(control);
@@ -59,6 +64,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
+            control.Visible = false;
+
             controlButton.BackColor = Color.Turquoise;
             btnInicio.BackColor = Color.LightSeaGreen;
             controlButton = btnInicio;
@@ -67,6 +74,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnAnotacoes_Click(object sender, EventArgs e)
         {
+            control.Visible = false;
+
             controlButton.BackColor = Color.Turquoise;
             btnAnotacoes.BackColor = Color.LightSeaGreen;
             controlButton = btnAnotacoes;
@@ -75,6 +84,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnProvas_Click(object sender, EventArgs e)
         {
+            control.Visible = false;
+
             controlButton.BackColor = Color.Turquoise;
             btnProvas.BackColor = Color.LightSeaGreen;
             controlButton = btnProvas;
@@ -83,6 +94,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnPlanos_Click(object sender, EventArgs e)
         {
+            control.Visible = false;
+
             controlButton.BackColor = Color.Turquoise;
             btnPlanos.BackColor = Color.LightSeaGreen;
             controlButton = btnPlanos;
@@ -91,12 +104,26 @@ namespace Agenda_Escolar.frames.user
 
         private void btnOpcoes_Click(object sender, EventArgs e)
         {
+            control.Visible = false;
 
+            controlButton.BackColor = Color.Turquoise;
+            btnOpcoes.BackColor = Color.LightSeaGreen;
+            controlButton = btnOpcoes;
+            txtTitulo.Text = "Configurações";
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
+            control.FindForm().Close();
+            control = new frames.userControl.Perfil(pessoa);
+            control.FindForm().TopLevel = false;
+            panelConteudo.Controls.Add(control);
+            control.Visible = true;
 
+            controlButton.BackColor = Color.Turquoise;
+            btnPerfil.BackColor = Color.LightSeaGreen;
+            controlButton = btnPerfil;
+            txtTitulo.Text = "Meu perfil";
         }
     }
 }

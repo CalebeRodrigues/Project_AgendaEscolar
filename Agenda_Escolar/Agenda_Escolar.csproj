@@ -94,6 +94,12 @@
     <Compile Include="frames\Sobre.Designer.cs">
       <DependentUpon>Sobre.cs</DependentUpon>
     </Compile>
+    <Compile Include="frames\userControl\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frames\userControl\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="frames\user\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frames\Sobre.resx">
       <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frames\userControl\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frames\user\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
@@ -152,7 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bd\" />
-    <Folder Include="frames\userControl\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AGENDA-ICONE.ico" />

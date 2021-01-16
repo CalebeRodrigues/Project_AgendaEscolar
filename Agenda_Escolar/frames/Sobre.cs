@@ -26,11 +26,6 @@ namespace Agenda_Escolar.frames
         {
 
         }
-
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            Hide();
-        }
         
     }
 }
