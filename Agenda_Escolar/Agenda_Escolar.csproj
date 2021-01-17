@@ -100,6 +100,12 @@
     <Compile Include="frames\userControl\Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="frames\userControl\PerfilAtualizaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frames\userControl\PerfilAtualizaSenha.Designer.cs">
+      <DependentUpon>PerfilAtualizaSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="frames\userControl\PerfilVerDados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frames\userControl\Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frames\userControl\PerfilAtualizaSenha.resx">
+      <DependentUpon>PerfilAtualizaSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frames\userControl\PerfilVerDados.resx">
       <DependentUpon>PerfilVerDados.cs</DependentUpon>

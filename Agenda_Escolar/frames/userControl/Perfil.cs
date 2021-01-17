@@ -38,7 +38,7 @@ namespace Agenda_Escolar.frames.userControl
 
         private void btnAlterarSenha_Click(object sender, EventArgs e)
         {
-
+            alteraJanela(new PerfilAtualizaSenha(pessoa));
         }
 
         private void btnVer_Click(object sender, EventArgs e)

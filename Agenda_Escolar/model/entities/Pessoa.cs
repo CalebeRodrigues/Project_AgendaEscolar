@@ -44,7 +44,15 @@ namespace Agenda_Escolar.model.entities
 
         public void setUserName(String userName) { this.userName = userName; }
 
-        public void setSenha(String senha) { this.senha = senha; }
+        public bool alterarSenha(String senhaAtual, String senha) {
+
+            if (senhaAtual == getSenha())
+            {
+                this.senha = senha; return true;
+            }
+
+            return false;
+        }
 
         public String getPrimeiroNome ()
         {
