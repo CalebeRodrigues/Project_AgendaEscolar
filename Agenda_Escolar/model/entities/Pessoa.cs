@@ -39,6 +39,13 @@ namespace Agenda_Escolar.model.entities
 
         public String getSenha() { return senha; }
 
+
+        public void setNome(String nome) { this.nome = nome; }
+
+        public void setUserName(String userName) { this.userName = userName; }
+
+        public void setSenha(String senha) { this.senha = senha; }
+
         public String getPrimeiroNome ()
         {
             if(nome != null)

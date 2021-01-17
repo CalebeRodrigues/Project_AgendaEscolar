@@ -13,6 +13,7 @@ namespace Agenda_Escolar.frames.userControl
     public partial class Perfil : Form
     {
         model.entities.Pessoa pessoa;
+        Control control;
 
         public Perfil(model.entities.Pessoa pessoa)
         {
@@ -20,15 +21,29 @@ namespace Agenda_Escolar.frames.userControl
 
             this.pessoa = pessoa;
 
-            txtNome.Text = pessoa.getNome();
-            txtCPF.Text = pessoa.getCPF().ToString();
-            txtDataNascimento.Text = pessoa.getDataNascimento();
-            txtUserName.Text = pessoa.getUserName();
+            control = new PerfilVerDados(pessoa);
+            control.FindForm().TopLevel = false;
+            panel1.Controls.Add(control);
+            control.Visible = false;
         }
 
-        private void btnAlterar_Click(object sender, EventArgs e)
+        public void alteraJanela(Form form)
         {
-            MessageBox.Show("Ainda não implementado!");
+            control.FindForm().Close();
+            control = form;
+            control.FindForm().TopLevel = false;
+            panel1.Controls.Add(control);
+            control.Visible = true;
+        }
+
+        private void btnAlterarSenha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            alteraJanela(new PerfilVerDados(pessoa));
         }
     }
 }

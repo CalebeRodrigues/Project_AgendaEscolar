@@ -26,6 +26,19 @@ namespace Agenda_Escolar
             label1.Select();
         }
 
+        public void atualizaList(model.entities.Pessoa pessoa)
+        {
+            foreach (model.entities.Pessoa p in this.pessoa)
+            {
+                if (pessoa.getID() == p.getID())
+                {
+                    this.pessoa.Remove(p);
+                    this.pessoa.Add(pessoa);
+                    break;
+                }
+            }            
+        }
+
         private bool verificaLogin(model.entities.Pessoa test)
         {
             foreach (model.entities.Pessoa list in pessoa){
@@ -92,7 +105,7 @@ namespace Agenda_Escolar
             {
                 pessoaLogin = GetPessoa(pessoaLogin);
                 MessageBox.Show("Seja bem vindo " + pessoaLogin.getNome() + "!", "Acesso autorizado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frames.user.Inicio inicio = new frames.user.Inicio(pessoaLogin);
+                frames.user.Inicio inicio = new frames.user.Inicio(pessoaLogin, this);
                 Hide();
                 inicio.ShowDialog();
                 resetForm(this);
@@ -119,7 +132,7 @@ namespace Agenda_Escolar
             cadastro.ShowDialog();
 
 
-            Show();
+            resetForm(this);
 
             if (cadastro.isCadastroExist())
             {

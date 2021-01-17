@@ -14,13 +14,15 @@ namespace Agenda_Escolar.frames.user
     {
         model.entities.Pessoa pessoa;
         Control control;
+        Login login;
         Button controlButton;
 
-        public Inicio(model.entities.Pessoa pessoa)
+        public Inicio(model.entities.Pessoa pessoa, Login login)
         {
             InitializeComponent();
             controlButton = btnInicio;
             this.pessoa = pessoa;
+            this.login = login;
 
             control = new Home(this);
             control.FindForm().TopLevel = false;
@@ -50,6 +52,17 @@ namespace Agenda_Escolar.frames.user
             txtTitulo.Text = text;
         }
 
+        public void executeFunction(model.entities.Pessoa pessoa, Button button, String text, Form form)
+        {
+            login.atualizaList(pessoa);
+
+            alteraJanela(form);
+
+            alteraButton(button, text);
+        }
+
+
+
         private void btnSair_Click(object sender, EventArgs e)
         {
             String op = MessageBox.Show("Desejas sair do seu perfil?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Information).ToString();
@@ -69,20 +82,18 @@ namespace Agenda_Escolar.frames.user
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
-            alteraJanela(new Sobre());
-
-            alteraButton(btnSobre, "Sobre o desenvolvedor");
+            executeFunction(pessoa, btnSobre, "Sobre o desenvolvedor", new Sobre());
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            alteraJanela(new Home(this));
-
-            alteraButton(btnInicio, "Agenda Escolar");
+            executeFunction(pessoa, btnInicio, "Agenda Escolar", new Home(this));
         }
 
         private void btnAnotacoes_Click(object sender, EventArgs e)
         {
+            login.atualizaList(pessoa);
+
             control.Visible = false;
 
             alteraButton(btnAnotacoes, "Anotações");
@@ -90,6 +101,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnProvas_Click(object sender, EventArgs e)
         {
+            login.atualizaList(pessoa);
+
             control.Visible = false;
 
             alteraButton(btnProvas, "Lista de Provas");
@@ -97,6 +110,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnPlanos_Click(object sender, EventArgs e)
         {
+            login.atualizaList(pessoa);
+
             control.Visible = false;
 
             alteraButton(btnPlanos, "Planos de Estudo");
@@ -104,6 +119,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnOpcoes_Click(object sender, EventArgs e)
         {
+            login.atualizaList(pessoa);
+
             control.Visible = false;
 
             alteraButton(btnOpcoes, "Configurações");
@@ -111,9 +128,12 @@ namespace Agenda_Escolar.frames.user
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
+            login.atualizaList(pessoa);
+
             alteraJanela(new frames.userControl.Perfil(pessoa));
 
             alteraButton(btnPerfil, "Meu perfil");
         }
+
     }
 }
