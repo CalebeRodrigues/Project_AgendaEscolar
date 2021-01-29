@@ -20,9 +20,18 @@ namespace Agenda_Escolar
         {
             InitializeComponent();
 
+            List<model.entities.Provas> list = new List<model.entities.Provas>();
+
+            list.Add(new model.entities.Provas(1, "Geografia", "21/02/2098"));
+            list.Add(new model.entities.Provas(2, "Matemática", "22/03/2098"));
+            list.Add(new model.entities.Provas(3, "Historia", "25/05/2098"));
+            list.Add(new model.entities.Provas(4, "Português", "11/08/2098"));
+            list.Add(new model.entities.Provas(5, "Inglês", "31/10/2098"));
+
             pessoa.Add(new model.entities.Pessoa
-                            (0, 11111111111, "27/11/2002", "Calebe Barros Rodrigues", "caca", "caca123"));
+                            (0, 11111111111, "27/11/2002", "Calebe Barros Rodrigues", "caca", "caca123", list));
             
+
             label1.Select();
         }
 
@@ -99,7 +108,7 @@ namespace Agenda_Escolar
         private void btnLogar_Click(object sender, EventArgs e)
         {
             model.entities.Pessoa pessoaLogin = new model.entities.Pessoa(0, 00000000000, null,
-                                    null, txtUsuario.Text, txtSenha.Text);
+                                    null, txtUsuario.Text, txtSenha.Text, null);
 
             if(verificaLogin(pessoaLogin))
             {

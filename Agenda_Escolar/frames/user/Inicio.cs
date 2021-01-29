@@ -46,8 +46,8 @@ namespace Agenda_Escolar.frames.user
 
         public void alteraButton(Button button, String text)
         {
-            controlButton.BackColor = Color.Turquoise;
-            button.BackColor = Color.LightSeaGreen;
+            controlButton.BackColor = Color.Gainsboro;
+            button.BackColor = Color.DarkGray;
             controlButton = button;
             txtTitulo.Text = text;
         }
@@ -101,11 +101,7 @@ namespace Agenda_Escolar.frames.user
 
         private void btnProvas_Click(object sender, EventArgs e)
         {
-            login.atualizaList(pessoa);
-
-            control.Visible = false;
-
-            alteraButton(btnProvas, "Lista de Provas");
+            executeFunction(pessoa, btnProvas, "Lista de Provas", new frames.UserControlProvas.Provas(pessoa));
         }
 
         private void btnPlanos_Click(object sender, EventArgs e)
@@ -129,7 +125,7 @@ namespace Agenda_Escolar.frames.user
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             login.atualizaList(pessoa);
-
+            
             alteraJanela(new frames.userControl.Perfil(pessoa));
 
             alteraButton(btnPerfil, "Meu perfil");

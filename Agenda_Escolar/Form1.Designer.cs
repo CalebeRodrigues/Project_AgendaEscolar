@@ -78,7 +78,7 @@
             // 
             // btnLogar
             // 
-            this.btnLogar.BackColor = System.Drawing.Color.Turquoise;
+            this.btnLogar.BackColor = System.Drawing.Color.Silver;
             this.btnLogar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogar.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,7 +170,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Turquoise;
+            this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.BackgroundImage = global::Agenda_Escolar.Properties.Resources.fechar;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -187,7 +187,7 @@
             this.AcceptButton = this.btnLogar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aquamarine;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(301, 375);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);

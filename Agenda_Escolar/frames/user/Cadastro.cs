@@ -45,7 +45,7 @@ namespace Agenda_Escolar.frames.user
                 exist = true;
 
                 pessoa = new model.entities.Pessoa
-                    (ID, Convert.ToInt64(mskCPF.Text), mskNascimento.Text, txtNome.Text, txtUserName.Text, txtSenha.Text);
+                    (ID, Convert.ToInt64(mskCPF.Text), mskNascimento.Text, txtNome.Text, txtUserName.Text, txtSenha.Text, null);
 
                 MessageBox.Show("Cadastro realizado!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();

@@ -15,9 +15,11 @@ namespace Agenda_Escolar.model.entities
         private String userName;
         private String senha;
 
+        private List<Provas> listProvas = new List<Provas>();
+
         public Pessoa() { }
 
-        public Pessoa (int ID, long CPF, String dataNascimento, String nome, String userName, String senha)
+        public Pessoa (int ID, long CPF, String dataNascimento, String nome, String userName, String senha, List<Provas> provas)
         {
             this.ID = ID;
             this.CPF = CPF;
@@ -25,6 +27,7 @@ namespace Agenda_Escolar.model.entities
             this.nome = nome;
             this.userName = userName;
             this.senha = senha;
+            listProvas = provas;
         }
         
         public int getID() { return ID; }
@@ -39,6 +42,9 @@ namespace Agenda_Escolar.model.entities
 
         public String getSenha() { return senha; }
 
+        public List<Provas> getProvas() { return listProvas; }
+
+        public void setProvas (List<Provas> provas) { listProvas = provas; }
 
         public void setNome(String nome) { this.nome = nome; }
 
