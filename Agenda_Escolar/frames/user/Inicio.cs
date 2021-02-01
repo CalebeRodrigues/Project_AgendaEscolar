@@ -65,6 +65,8 @@ namespace Agenda_Escolar.frames.user
 
         private void btnSair_Click(object sender, EventArgs e)
         {
+            login.atualizaList(pessoa);
+
             String op = MessageBox.Show("Desejas sair do seu perfil?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Information).ToString();
 
             if (op == "Yes") Close();

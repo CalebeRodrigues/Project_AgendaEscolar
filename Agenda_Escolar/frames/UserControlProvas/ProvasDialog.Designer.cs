@@ -43,7 +43,7 @@
             this.txtNomeJanela.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeJanela.AutoSize = true;
-            this.txtNomeJanela.Location = new System.Drawing.Point(252, 9);
+            this.txtNomeJanela.Location = new System.Drawing.Point(12, 9);
             this.txtNomeJanela.Name = "txtNomeJanela";
             this.txtNomeJanela.Size = new System.Drawing.Size(70, 23);
             this.txtNomeJanela.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(199, 99);
+            this.txtNome.Location = new System.Drawing.Point(155, 68);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(329, 32);
             this.txtNome.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 108);
+            this.label1.Location = new System.Drawing.Point(40, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 23);
             this.label1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 183);
+            this.label2.Location = new System.Drawing.Point(40, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 23);
             this.label2.TabIndex = 4;
@@ -80,7 +80,7 @@
             this.btnFunction.FlatAppearance.BorderSize = 0;
             this.btnFunction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnFunction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFunction.Location = new System.Drawing.Point(208, 261);
+            this.btnFunction.Location = new System.Drawing.Point(174, 230);
             this.btnFunction.Name = "btnFunction";
             this.btnFunction.Size = new System.Drawing.Size(181, 43);
             this.btnFunction.TabIndex = 28;
@@ -99,7 +99,7 @@
             this.btnSair.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(543, 290);
+            this.btnSair.Location = new System.Drawing.Point(473, 271);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(53, 46);
             this.btnSair.TabIndex = 29;
@@ -109,7 +109,7 @@
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(199, 174);
+            this.txtData.Location = new System.Drawing.Point(155, 143);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(329, 32);
@@ -121,7 +121,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(608, 348);
+            this.ClientSize = new System.Drawing.Size(538, 329);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnFunction);
@@ -130,9 +130,10 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtNomeJanela);
             this.Font = new System.Drawing.Font("Lucida Bright", 15.75F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Name = "ProvasDialog";
-            this.Text = "ProvasDialog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

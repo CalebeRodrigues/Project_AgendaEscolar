@@ -35,7 +35,7 @@ namespace Agenda_Escolar
             label1.Select();
         }
 
-        public void atualizaList(model.entities.Pessoa pessoa)
+        public void atualizaList (model.entities.Pessoa pessoa)
         {
             foreach (model.entities.Pessoa p in this.pessoa)
             {
@@ -128,10 +128,10 @@ namespace Agenda_Escolar
         private void resetForm(Login form)
         {
             Login login = new Login();
-            login.pessoa = form.pessoa;
             login.ID = form.ID;
-            login = form;
-            login.ShowDialog();
+            login.pessoa = form.pessoa;
+            form = login;
+            form.ShowDialog();
         }
 
         private void linkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -29,20 +29,46 @@ namespace Agenda_Escolar.frames.UserControlProvas
         public ProvasDialog(String functionJanela, model.entities.Provas provas)
         {
             InitializeComponent();
-            
+            this.provas = provas;
+            txtNomeJanela.Text = functionJanela;
+            txtNome.Text = provas.getNome();
+            txtData.Text = provas.getData();
 
+            btnFunction.Text = "Salvar";
         }
 
         private void adicionarProva ()
         {
-            provas = new model.entities.Provas(pessoa.getProvas().Count() + 1, txtNome.Text, txtData.Text);
+            int cont;
+
+            if(pessoa.getProvas().Count == 0)
+            {
+                cont = 1;
+            }
+            else
+            {
+                cont = pessoa.getProvas().Count + 1;
+            }
+
+            provas = new model.entities.Provas(cont, txtNome.Text, txtData.Text);
 
             pessoa.getProvas().Add(provas);
+
+            MessageBox.Show("Prova adicionada com sucesso!");
+        }
+
+        private void editarProva()
+        {
+            provas.setNome(txtNome.Text);
+            provas.setData(txtData.Text);
+            MessageBox.Show("Alterado com sucesso.");
         }
 
         private void btnFunction_Click(object sender, EventArgs e)
         {
             if (btnFunction.Text == "Adicionar") { adicionarProva(); }
+
+            else if (btnFunction.Text == "Salvar") { editarProva(); }
 
             Hide();
         }
