@@ -100,6 +100,12 @@
     <Compile Include="frames\UserControlProvas\Provas.Designer.cs">
       <DependentUpon>Provas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frames\UserControlProvas\ProvasDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frames\UserControlProvas\ProvasDialog.Designer.cs">
+      <DependentUpon>ProvasDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="frames\userControl\Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frames\UserControlProvas\Provas.resx">
       <DependentUpon>Provas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frames\UserControlProvas\ProvasDialog.resx">
+      <DependentUpon>ProvasDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frames\userControl\Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>

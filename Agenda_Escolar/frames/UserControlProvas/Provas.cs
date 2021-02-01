@@ -19,14 +19,18 @@ namespace Agenda_Escolar.frames.UserControlProvas
         {
             InitializeComponent();
 
+            table = null;
             this.pessoa = pessoa;
 
             gridListaProvas.DataSource = initializeTable(table);
+            gridListaProvas.Columns[0].Width = 320;
+            gridListaProvas.Columns[1].Width = 230;
         }
 
         public DataTable initializeTable (DataTable table)
         {
             table = new DataTable();
+
             table.Columns.Add("Disciplina", typeof(String));
             table.Columns.Add("Data", typeof(String));
 
@@ -41,6 +45,17 @@ namespace Agenda_Escolar.frames.UserControlProvas
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            ProvasDialog provasDialog = new ProvasDialog("Adicionar Provas", pessoa);
+
+            provasDialog.ShowDialog();
+
+            provasDialog.Close();
+
+            gridListaProvas.DataSource = initializeTable(table);
         }
     }
 }

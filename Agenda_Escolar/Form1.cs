@@ -130,8 +130,8 @@ namespace Agenda_Escolar
             Login login = new Login();
             login.pessoa = form.pessoa;
             login.ID = form.ID;
-            form = login;
-            form.ShowDialog();
+            login = form;
+            login.ShowDialog();
         }
 
         private void linkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -141,13 +141,13 @@ namespace Agenda_Escolar
             cadastro.ShowDialog();
 
 
-            resetForm(this);
-
             if (cadastro.isCadastroExist())
             {
                 pessoa.Add(cadastro.cadastraPessoa());
                 cadastro.Close();
             }
+
+            resetForm(this);
 
         }
 

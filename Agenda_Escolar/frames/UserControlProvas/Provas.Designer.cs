@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.gridListaProvas = new System.Windows.Forms.DataGridView();
+            this.btnAdicionar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridListaProvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,9 +63,23 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridListaProvas.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridListaProvas.RowTemplate.Height = 30;
-            this.gridListaProvas.Size = new System.Drawing.Size(594, 313);
+            this.gridListaProvas.Size = new System.Drawing.Size(593, 313);
             this.gridListaProvas.StandardTab = true;
             this.gridListaProvas.TabIndex = 2;
+            // 
+            // btnAdicionar
+            // 
+            this.btnAdicionar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAdicionar.FlatAppearance.BorderSize = 0;
+            this.btnAdicionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdicionar.Location = new System.Drawing.Point(177, 395);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(181, 43);
+            this.btnAdicionar.TabIndex = 27;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.UseVisualStyleBackColor = false;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // Provas
             // 
@@ -72,6 +87,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(783, 471);
+            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.gridListaProvas);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Lucida Bright", 15.75F);
@@ -88,5 +104,6 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView gridListaProvas;
+        private System.Windows.Forms.Button btnAdicionar;
     }
 }
