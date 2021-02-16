@@ -42,7 +42,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(252, 9);
+            this.label3.Location = new System.Drawing.Point(261, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 24);
             this.label3.TabIndex = 39;
@@ -52,7 +52,7 @@
             // 
             this.txtAtual.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAtual.ForeColor = System.Drawing.Color.Silver;
-            this.txtAtual.Location = new System.Drawing.Point(153, 93);
+            this.txtAtual.Location = new System.Drawing.Point(162, 93);
             this.txtAtual.Name = "txtAtual";
             this.txtAtual.Size = new System.Drawing.Size(358, 30);
             this.txtAtual.TabIndex = 42;
@@ -64,7 +64,7 @@
             // 
             this.txtNova.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNova.ForeColor = System.Drawing.Color.Silver;
-            this.txtNova.Location = new System.Drawing.Point(153, 167);
+            this.txtNova.Location = new System.Drawing.Point(162, 167);
             this.txtNova.Name = "txtNova";
             this.txtNova.Size = new System.Drawing.Size(358, 30);
             this.txtNova.TabIndex = 43;
@@ -78,7 +78,7 @@
             this.btnVer.FlatAppearance.BorderSize = 0;
             this.btnVer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVer.Location = new System.Drawing.Point(131, 251);
+            this.btnVer.Location = new System.Drawing.Point(145, 227);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(155, 43);
             this.btnVer.TabIndex = 45;
@@ -91,7 +91,7 @@
             this.btnAlterarSenha.FlatAppearance.BorderSize = 0;
             this.btnAlterarSenha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAlterarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlterarSenha.Location = new System.Drawing.Point(376, 251);
+            this.btnAlterarSenha.Location = new System.Drawing.Point(390, 227);
             this.btnAlterarSenha.Name = "btnAlterarSenha";
             this.btnAlterarSenha.Size = new System.Drawing.Size(155, 43);
             this.btnAlterarSenha.TabIndex = 45;
@@ -103,7 +103,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(298, 70);
+            this.label1.Location = new System.Drawing.Point(307, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 46;
@@ -113,7 +113,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(302, 144);
+            this.label2.Location = new System.Drawing.Point(311, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 47;
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(675, 339);
+            this.ClientSize = new System.Drawing.Size(691, 294);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAlterarSenha);

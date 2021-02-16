@@ -144,8 +144,14 @@
     </Compile>
     <Compile Include="model\entities\Pessoa.cs" />
     <Compile Include="model\entities\Provas.cs" />
+    <Compile Include="CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CircularButton.resx">
+      <DependentUpon>CircularButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bd\" />
+    <Folder Include="model\items\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AGENDA-ICONE.ico" />

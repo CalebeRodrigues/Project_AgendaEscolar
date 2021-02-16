@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(309, 9);
+            this.label1.Location = new System.Drawing.Point(407, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 3;
@@ -49,9 +49,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(41, 48);
+            this.panel1.Location = new System.Drawing.Point(133, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(691, 378);
+            this.panel1.Size = new System.Drawing.Size(691, 294);
             this.panel1.TabIndex = 24;
             // 
             // btnAlterarSenha
@@ -60,7 +60,7 @@
             this.btnAlterarSenha.FlatAppearance.BorderSize = 0;
             this.btnAlterarSenha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAlterarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlterarSenha.Location = new System.Drawing.Point(562, 445);
+            this.btnAlterarSenha.Location = new System.Drawing.Point(648, 363);
             this.btnAlterarSenha.Name = "btnAlterarSenha";
             this.btnAlterarSenha.Size = new System.Drawing.Size(181, 43);
             this.btnAlterarSenha.TabIndex = 25;
@@ -74,7 +74,7 @@
             this.btnAtualizaPerfil.FlatAppearance.BorderSize = 0;
             this.btnAtualizaPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAtualizaPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtualizaPerfil.Location = new System.Drawing.Point(32, 445);
+            this.btnAtualizaPerfil.Location = new System.Drawing.Point(118, 363);
             this.btnAtualizaPerfil.Name = "btnAtualizaPerfil";
             this.btnAtualizaPerfil.Size = new System.Drawing.Size(181, 43);
             this.btnAtualizaPerfil.TabIndex = 26;
@@ -87,7 +87,7 @@
             this.btnVer.FlatAppearance.BorderSize = 0;
             this.btnVer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVer.Location = new System.Drawing.Point(297, 445);
+            this.btnVer.Location = new System.Drawing.Point(383, 363);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(181, 43);
             this.btnVer.TabIndex = 27;
@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(799, 510);
+            this.ClientSize = new System.Drawing.Size(971, 431);
             this.Controls.Add(this.btnVer);
             this.Controls.Add(this.btnAtualizaPerfil);
             this.Controls.Add(this.btnAlterarSenha);

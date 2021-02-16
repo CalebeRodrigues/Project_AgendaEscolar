@@ -46,8 +46,12 @@ namespace Agenda_Escolar.frames.user
 
         public void alteraButton(Button button, String text)
         {
-            controlButton.BackColor = Color.Gainsboro;
-            button.BackColor = Color.DarkGray;
+            controlButton.BackColor = Color.LightGreen;
+            button.BackColor = Color.White;
+            button.Size = controlButton.Size;
+            button.Location = new Point(button.Location.X, 466);
+            controlButton.Location = new Point(controlButton.Location.X, 494);
+            controlButton.Size = new Size(79, 75);
             controlButton = button;
             txtTitulo.Text = text;
         }
