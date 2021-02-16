@@ -147,7 +147,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 15);
             this.label5.TabIndex = 7;
-            this.label5.Text = "@Versão 1.5";
+            this.label5.Text = "@Versão 1.6";
             // 
             // Sobre
             // 

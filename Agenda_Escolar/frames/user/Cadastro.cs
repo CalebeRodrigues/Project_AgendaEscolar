@@ -18,7 +18,7 @@ namespace Agenda_Escolar.frames.user
         public Cadastro(int ID)
         {
             InitializeComponent();
-            this.ID = ID++;
+            this.ID = ID;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

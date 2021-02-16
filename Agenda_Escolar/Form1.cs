@@ -136,6 +136,7 @@ namespace Agenda_Escolar
 
         private void linkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            ID++;
             frames.user.Cadastro cadastro = new frames.user.Cadastro(ID);
             Hide();
             cadastro.ShowDialog();
@@ -146,11 +147,10 @@ namespace Agenda_Escolar
                 pessoa.Add(cadastro.cadastraPessoa());
                 cadastro.Close();
             }
-
+            MessageBox.Show(ID.ToString());
             resetForm(this);
 
         }
-
-
+        
     }
 }

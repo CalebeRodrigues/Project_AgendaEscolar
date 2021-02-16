@@ -62,20 +62,20 @@
             // 
             // txtTitulo
             // 
-            this.txtTitulo.BackColor = System.Drawing.Color.LightGreen;
+            this.txtTitulo.BackColor = System.Drawing.Color.PaleGreen;
             this.txtTitulo.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.txtTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtTitulo.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.Location = new System.Drawing.Point(443, 0);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(589, 51);
+            this.txtTitulo.Size = new System.Drawing.Size(558, 51);
             this.txtTitulo.TabIndex = 20;
             this.txtTitulo.Text = "Agenda Escolar";
             this.txtTitulo.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.LightGreen;
+            this.pictureBox2.BackColor = System.Drawing.Color.PaleGreen;
             this.pictureBox2.Image = global::Agenda_Escolar.Properties.Resources.perfil;
             this.pictureBox2.Location = new System.Drawing.Point(31, 3);
             this.pictureBox2.Name = "pictureBox2";
@@ -86,9 +86,9 @@
             // 
             // userName
             // 
-            this.userName.BackColor = System.Drawing.Color.LightGreen;
-            this.userName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.userName.BackColor = System.Drawing.Color.PaleGreen;
+            this.userName.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.userName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userName.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userName.Location = new System.Drawing.Point(0, 0);
             this.userName.Name = "userName";
@@ -96,6 +96,7 @@
             this.userName.TabIndex = 19;
             this.userName.Text = "Nome Usuario";
             this.userName.UseVisualStyleBackColor = false;
+            this.userName.Click += new System.EventHandler(this.userName_Click);
             // 
             // btnInicio
             // 
@@ -252,7 +253,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightGreen;
+            this.pictureBox1.BackColor = System.Drawing.Color.PaleGreen;
             this.pictureBox1.Location = new System.Drawing.Point(0, 494);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(995, 75);
