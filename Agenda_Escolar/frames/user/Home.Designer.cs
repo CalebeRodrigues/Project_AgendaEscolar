@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnPlanos = new System.Windows.Forms.Button();
-            this.btnAnotacoes = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnAnotacoes = new System.Windows.Forms.Button();
             this.btnProvas = new System.Windows.Forms.Button();
             this.btnOpcoes = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
@@ -47,98 +47,100 @@
             this.flowLayoutPanel1.Controls.Add(this.btnProvas);
             this.flowLayoutPanel1.Controls.Add(this.btnOpcoes);
             this.flowLayoutPanel1.Controls.Add(this.btnSobre);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(168, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(165, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(628, 395);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(633, 407);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // btnPlanos
             // 
-            this.btnPlanos.BackColor = System.Drawing.Color.Azure;
+            this.btnPlanos.BackColor = System.Drawing.Color.Yellow;
             this.btnPlanos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlanos.BackgroundImage")));
             this.btnPlanos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPlanos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlanos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnPlanos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnPlanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlanos.Location = new System.Drawing.Point(3, 3);
             this.btnPlanos.Name = "btnPlanos";
-            this.btnPlanos.Size = new System.Drawing.Size(202, 190);
+            this.btnPlanos.Size = new System.Drawing.Size(205, 197);
             this.btnPlanos.TabIndex = 7;
             this.btnPlanos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPlanos.UseVisualStyleBackColor = false;
-            // 
-            // btnAnotacoes
-            // 
-            this.btnAnotacoes.BackColor = System.Drawing.Color.Azure;
-            this.btnAnotacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnotacoes.BackgroundImage")));
-            this.btnAnotacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnotacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnotacoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnAnotacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnotacoes.Location = new System.Drawing.Point(419, 3);
-            this.btnAnotacoes.Name = "btnAnotacoes";
-            this.btnAnotacoes.Size = new System.Drawing.Size(202, 190);
-            this.btnAnotacoes.TabIndex = 8;
-            this.btnAnotacoes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAnotacoes.UseVisualStyleBackColor = false;
+            this.btnPlanos.Click += new System.EventHandler(this.btnPlanos_Click);
             // 
             // btnPerfil
             // 
-            this.btnPerfil.BackColor = System.Drawing.Color.Azure;
+            this.btnPerfil.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Location = new System.Drawing.Point(211, 3);
+            this.btnPerfil.Location = new System.Drawing.Point(214, 3);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(202, 190);
+            this.btnPerfil.Size = new System.Drawing.Size(205, 197);
             this.btnPerfil.TabIndex = 9;
             this.btnPerfil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPerfil.UseVisualStyleBackColor = false;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
+            // btnAnotacoes
+            // 
+            this.btnAnotacoes.BackColor = System.Drawing.Color.Orchid;
+            this.btnAnotacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnotacoes.BackgroundImage")));
+            this.btnAnotacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAnotacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnotacoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAnotacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnotacoes.Location = new System.Drawing.Point(425, 3);
+            this.btnAnotacoes.Name = "btnAnotacoes";
+            this.btnAnotacoes.Size = new System.Drawing.Size(205, 197);
+            this.btnAnotacoes.TabIndex = 8;
+            this.btnAnotacoes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAnotacoes.UseVisualStyleBackColor = false;
+            // 
             // btnProvas
             // 
-            this.btnProvas.BackColor = System.Drawing.Color.Azure;
+            this.btnProvas.BackColor = System.Drawing.Color.SpringGreen;
             this.btnProvas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProvas.BackgroundImage")));
             this.btnProvas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProvas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProvas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnProvas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnProvas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProvas.Location = new System.Drawing.Point(3, 199);
+            this.btnProvas.Location = new System.Drawing.Point(3, 206);
             this.btnProvas.Name = "btnProvas";
-            this.btnProvas.Size = new System.Drawing.Size(202, 190);
+            this.btnProvas.Size = new System.Drawing.Size(205, 197);
             this.btnProvas.TabIndex = 10;
             this.btnProvas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnProvas.UseVisualStyleBackColor = false;
+            this.btnProvas.Click += new System.EventHandler(this.btnProvas_Click);
             // 
             // btnOpcoes
             // 
-            this.btnOpcoes.BackColor = System.Drawing.Color.Azure;
+            this.btnOpcoes.BackColor = System.Drawing.Color.Crimson;
             this.btnOpcoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpcoes.BackgroundImage")));
             this.btnOpcoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOpcoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpcoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnOpcoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnOpcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpcoes.Location = new System.Drawing.Point(211, 199);
+            this.btnOpcoes.Location = new System.Drawing.Point(214, 206);
             this.btnOpcoes.Name = "btnOpcoes";
-            this.btnOpcoes.Size = new System.Drawing.Size(202, 190);
+            this.btnOpcoes.Size = new System.Drawing.Size(205, 197);
             this.btnOpcoes.TabIndex = 11;
             this.btnOpcoes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnOpcoes.UseVisualStyleBackColor = false;
             // 
             // btnSobre
             // 
-            this.btnSobre.BackColor = System.Drawing.Color.Azure;
+            this.btnSobre.BackColor = System.Drawing.Color.GreenYellow;
             this.btnSobre.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSobre.BackgroundImage")));
             this.btnSobre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSobre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSobre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSobre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSobre.Location = new System.Drawing.Point(419, 199);
+            this.btnSobre.Location = new System.Drawing.Point(425, 206);
             this.btnSobre.Name = "btnSobre";
-            this.btnSobre.Size = new System.Drawing.Size(202, 190);
+            this.btnSobre.Size = new System.Drawing.Size(205, 197);
             this.btnSobre.TabIndex = 12;
             this.btnSobre.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSobre.UseVisualStyleBackColor = false;

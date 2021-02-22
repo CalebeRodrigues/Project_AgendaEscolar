@@ -305,14 +305,14 @@
         private System.Windows.Forms.Button userName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelConteudo;
-        public System.Windows.Forms.Button btnInicio;
-        public System.Windows.Forms.Button btnProvas;
-        public System.Windows.Forms.Button btnSair;
-        public System.Windows.Forms.Button btnPlanos;
-        public System.Windows.Forms.Button btnSobre;
-        public System.Windows.Forms.Button btnAnotacoes;
-        public System.Windows.Forms.Button btnOpcoes;
-        public System.Windows.Forms.Button btnPerfil;
+        public model.items.CircularButton btnInicio;
+        public model.items.CircularButton btnProvas;
+        public model.items.CircularButton btnSair;
+        public model.items.CircularButton btnPlanos;
+        public model.items.CircularButton btnSobre;
+        public model.items.CircularButton btnAnotacoes;
+        public model.items.CircularButton btnOpcoes;
+        public model.items.CircularButton btnPerfil;
 
         /*
             public System.Windows.Forms.Button btnInicio;

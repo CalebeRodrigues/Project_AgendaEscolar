@@ -22,18 +22,22 @@ namespace Agenda_Escolar.frames.user
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
-
-            inicio.alteraButton(inicio.btnSobre, "Sobre o desenvolvedor");
-
-            inicio.alteraJanela(new Sobre());
+            inicio.executeFunction(inicio.getPessoa(), inicio.btnSobre, "Sobre o desenvolvedor", new Sobre());
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
+            inicio.executeFunction(inicio.getPessoa(), inicio.btnPerfil, "Meu perfil", new frames.userControl.Perfil(inicio.getPessoa()));
+        }
 
-            inicio.alteraButton(inicio.btnPerfil, "Meu perfil");
+        private void btnPlanos_Click(object sender, EventArgs e)
+        {
 
-            inicio.alteraJanela(new frames.userControl.Perfil(inicio.getPessoa()));
+        }
+
+        private void btnProvas_Click(object sender, EventArgs e)
+        {
+            inicio.executeFunction(inicio.getPessoa(), inicio.btnProvas, "Lista de Provas", new UserControlProvas.Provas(inicio.getPessoa()));
         }
     }
 }

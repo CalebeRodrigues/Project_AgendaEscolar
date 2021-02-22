@@ -145,9 +145,13 @@ namespace Agenda_Escolar
             if (cadastro.isCadastroExist())
             {
                 pessoa.Add(cadastro.cadastraPessoa());
-                cadastro.Close();
             }
-            MessageBox.Show(ID.ToString());
+            else
+            {
+                ID--;
+            }
+
+            cadastro.Close();
             resetForm(this);
 
         }

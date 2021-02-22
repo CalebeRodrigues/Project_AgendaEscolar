@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Agenda_Escolar.model.items
 {
-    class CircularButton : Button
+    public class CircularButton : Button
     {
         protected override void OnPaint(PaintEventArgs pevent)
         {

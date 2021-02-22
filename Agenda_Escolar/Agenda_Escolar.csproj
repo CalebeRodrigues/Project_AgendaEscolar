@@ -142,11 +142,13 @@
     <Compile Include="frames\user\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\entities\Anotações.cs" />
     <Compile Include="model\entities\Pessoa.cs" />
     <Compile Include="model\entities\Provas.cs" />
     <Compile Include="CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="model\items\Disciplina.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CircularButton.resx">
@@ -213,7 +215,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bd\" />
-    <Folder Include="model\items\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AGENDA-ICONE.ico" />
